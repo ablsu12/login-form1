@@ -7,18 +7,14 @@ export const Card = () => {
   return (
     <div
       className={
-        "w-3/5 h-1/2 flex flex-col items-center pt-12 rounded-xl md:w-1/2 xl:w-1/3 md:h-screen md:justify-center md:rounded-none bg-white"
+        "w-3/5 h-1/2 flex flex-col items-center pt-12 rounded-xl md:w-1/2 xl:w-1/3 md:h-screen md:justify-center md:rounded-none " +
+        "md:shadow-2xl bg-white"
       }
     >
       <Image src={profile} alt={"walter"} />
       <p className={"text-xs font-light font-sans py-2.5"}>Welcome Walter</p>
       <h1 className={"text-xl font-bold mb-6"}>Walter White</h1>
-      <Input
-        type={"password"}
-        minWidth={6}
-        maxWidth={12}
-        placeholder={"Enter your passcode"}
-      />
+      <Input minWidth={6} maxWidth={12} placeholder={"Enter your passcode"} />
       <Button value={"Login"} btnHandler={() => {}} />
       <p
         className={"text-sm font-light font-sans py-2.5"}
