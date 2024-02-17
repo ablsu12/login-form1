@@ -14,7 +14,7 @@ export const Input: React.FC<Input> = ({ minWidth, maxWidth, placeholder }) => {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   return (
-    <div className={"w-full relative"}>
+    <div className={"flex relative w-3/4 md:w-3/5"}>
       <input
         type={showPassword ? "text" : "password"}
         value={password}
@@ -23,7 +23,7 @@ export const Input: React.FC<Input> = ({ minWidth, maxWidth, placeholder }) => {
         maxLength={maxWidth}
         placeholder={placeholder}
         className={
-          "w-3/4 h-10 placeholder:text-xs bg-gray-300 outline-none rounded px-4 shadow-2xl my-2.5 md:w-3/5 md:placeholder:text-sm"
+          "w-full h-10 placeholder:text-xs placeholder:text-white bg-gray-600 text-white outline-none rounded px-4 shadow-2xl my-2.5 md:w-full md:placeholder:text-sm"
         }
       />
       <Icon
